@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Frontend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">DEV</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">Обо мне</a></li>
+                <li><a href="#projects" class="nav-link">Проекты</a></li>
+                <li><a href="#commercial" class="nav-link">Коммерция</a></li>
+                <li><a href="#contact" class="nav-link">Контакты</a></li>
+            </ul>
+            <div class="hamburger" role="button" aria-label="Открыть меню" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="pulse-dot"></span>
+                Открыт к предложениям
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Привет, я</span>
+                <span class="title-gradient">Frontend Разработчик</span>
+            </h1>
+            <p class="hero-description">
+                Создаю современные, производительные и красивые веб-интерфейсы. 
+                Превращаю идеи в работающий код с вниманием к деталям и UX.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <span>Смотреть работы</span>
+                    <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#contact" class="btn btn-secondary">Связаться</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">2+</span>
+                    <span class="stat-label">Года опыта</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Проектов</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Качество</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Листайте вниз</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Обо мне</span>
+                <h2 class="section-title">Кто я такой?</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <div class="image-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                        </div>
+                        <div class="image-glow"></div>
+                    </div>
+                    <div class="experience-badge">
+                        <span class="exp-number">2+</span>
+                        <span class="exp-text">года опыта</span>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <p class="about-text">
+                        Я <strong>Frontend-разработчик</strong> с страстью к созданию 
+                        красивых и функциональных веб-интерфейсов. Моя цель — делать сайты, 
+                        которые не только выглядят потрясающе, но и обеспечивают отличный 
+                        пользовательский опыт.
+                    </p>
+                    <p class="about-text">
+                        Специализируюсь на современных технологиях: <strong>HTML5, CSS3, JavaScript, React</strong>. 
+                        Постоянно учусь и развиваюсь, следя за последними трендами в веб-разработке.
+                    </p>
+                    <div class="skills-container">
+                        <h3 class="skills-title">Технологии</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon html">
+                                    <img src="assets/html5.svg" alt="HTML5">
+                                </div>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon css">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M1.5 0h21l-1.91 21.563L11.977 24 3.409 21.563 1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573 6.142-.008-.396 4.326-2.839.795-2.896-.795-.185-2.163H6.424l.33 4.171L11.977 20l5.201-1.433 1.413-14.154z"/>
+                                    </svg>
+                                </div>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon js">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.69 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/>
+                                    </svg>
+                                </div>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon react">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <circle cx="12" cy="12" r="2"/>
+                                        <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(30 12 12)" fill="none" stroke="currentColor" stroke-width="0.5"/>
+                                        <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(90 12 12)" fill="none" stroke="currentColor" stroke-width="0.5"/>
+                                        <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(150 12 12)" fill="none" stroke="currentColor" stroke-width="0.5"/>
+                                    </svg>
+                                </div>
+                                <span>React</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Связаться со мной</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Портфолио</span>
+                <h2 class="section-title">Мои Проекты</h2>
+                <p class="section-subtitle">Здесь представлены некоторые из моих работ с видео-обзорами</p>
+            </div>
+            <div class="legacy-notice">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="12" y1="16" x2="12" y2="12"/>
+                    <line x1="12" y1="8" x2="12.01" y2="8"/>
+                </svg>
+                <p>
+                    <strong>Примечание:</strong> Видео-обзоры были записаны ранее под ником <strong>@ItsUsernam</strong>. 
+                    Сейчас я работаю под ником <strong>@itsGenial</strong>. Проекты и навыки остались теми же!
+                </p>
+            </div>
+            <div class="projects-grid">
+                <!-- Video Project 1 -->
+                <div class="project-card video-project">
+                    <div class="project-media">
+                        <video class="project-video" preload="metadata" poster="assets/poster1.jpg" muted playsinline>
+                            <source src="assets/video1.mp4" type="video/mp4">
+                            Ваш браузер не поддерживает видео.
+                        </video>
+                        <div class="video-placeholder">
+                            <button class="play-button" type="button" aria-label="Воспроизвести видео">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </button>
+                            <span class="video-label">Нажмите для воспроизведения</span>
+                        </div>
+                        <button class="pause-button" type="button" aria-label="Пауза">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <rect x="6" y="4" width="4" height="16"/>
+                                <rect x="14" y="4" width="4" height="16"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3 class="project-title">Проект #1</h3>
+                            <span class="project-badge legacy">Запись с прошлым ником</span>
+                        </div>
+                        <p class="project-description">
+                            Современный лендинг с анимациями и интерактивными элементами. 
+                            Адаптивный дизайн и оптимизированная производительность.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Project 2 -->
+                <div class="project-card video-project">
+                    <div class="project-media">
+                        <video class="project-video" preload="metadata" poster="assets/poster2.jpg" muted playsinline>
+                            <source src="assets/video2.mp4" type="video/mp4">
+                            Ваш браузер не поддерживает видео.
+                        </video>
+                        <div class="video-placeholder">
+                            <button class="play-button" type="button" aria-label="Воспроизвести видео">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </button>
+                            <span class="video-label">Нажмите для воспроизведения</span>
+                        </div>
+                        <button class="pause-button" type="button" aria-label="Пауза">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <rect x="6" y="4" width="4" height="16"/>
+                                <rect x="14" y="4" width="4" height="16"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3 class="project-title">Проект #2</h3>
+                            <span class="project-badge legacy">Запись с прошлым ником</span>
+                        </div>
+                        <p class="project-description">
+                            Веб-приложение с использованием современных фреймворков. 
+                            Чистый код и продуманная архитектура.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">SCSS</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Commercial Project Section -->
+    <section class="commercial" id="commercial">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag commercial-tag">Коммерческий проект</span>
+                <h2 class="section-title">Top5 — Школа Английского Языка</h2>
+            </div>
+            <div class="commercial-showcase">
+                <div class="commercial-preview">
+                    <div class="preview-mockup">
+                        <div class="mockup-browser">
+                            <div class="browser-header">
+                                <div class="browser-dots">
+                                    <span class="dot red"></span>
+                                    <span class="dot yellow"></span>
+                                    <span class="dot green"></span>
+                                </div>
+                                <div class="browser-url">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                                        <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                                    </svg>
+                                    <span>topfive.moscow</span>
+                                </div>
+                            </div>
+                            <div class="browser-content">
+                                <div class="preview-content">
+                                    <div class="preview-hero">
+                                        <div class="preview-logo">ТОП5</div>
+                                        <div class="preview-title">Школа иностранных языков</div>
+                                        <div class="preview-subtitle">Английский с результатом уже через 3 месяца</div>
+                                    </div>
+                                    <div class="preview-features">
+                                        <div class="preview-feature">
+                                            <div class="feature-icon">👥</div>
+                                            <span>Группы до 6 человек</span>
+                                        </div>
+                                        <div class="preview-feature">
+                                            <div class="feature-icon">⭐</div>
+                                            <span>200+ учеников</span>
+                                        </div>
+                                        <div class="preview-feature">
+                                            <div class="feature-icon">📍</div>
+                                            <span>2 филиала</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="preview-glow"></div>
+                </div>
+                <div class="commercial-info">
+                    <div class="info-card">
+                        <h3 class="info-title">О проекте</h3>
+                        <p class="info-text">
+                            Разработал сайт для школы английского языка «Top5» в Москве. 
+                            Проект включал создание современного лендинга с каталогом курсов, 
+                            формой записи на занятия и контактной информацией. 
+                            Сайт успешно запущен и продолжает работать.
+                        </p>
+                    </div>
+                    <div class="info-card">
+                        <h3 class="info-title">Результат</h3>
+                        <ul class="info-list">
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                Сайт успешно запущен и работает
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                Адаптивный дизайн для всех устройств
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                Оптимизированная производительность
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                Удобная админ-панель для клиента
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="https://topfive.moscow/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-small">
+                        <span>Посетить сайт</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                            <polyline points="15 3 21 3 21 9"/>
+                            <line x1="10" y1="14" x2="21" y2="3"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Контакты</span>
+                <h2 class="section-title">Давайте работать вместе!</h2>
+                <p class="section-subtitle">Готов обсудить ваш проект и предложить лучшие решения</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-card large">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="22" y1="2" x2="11" y2="13"/>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                        </svg>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Telegram</h4>
+                        <a href="https://t.me/itsGenial" target="_blank" rel="noopener noreferrer">@itsGenial</a>
+                    </div>
+                </div>
+                <div class="contact-note">
+                    <p>Свяжитесь со мной в Telegram — я всегда открыт для обсуждения новых проектов и интересных предложений!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>
+                    <span class="logo-text">DEV</span>
+                    <span class="logo-bracket">/&gt;</span>
+                </div>
+                <p class="footer-text">
+                    © 2026 Frontend Developer. Все права защищены.
+                </p>
+                <p class="footer-made">
+                    Сделано с <span class="heart">❤</span> и кофе
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
